@@ -39,13 +39,17 @@
 -(void)startBeaconMonitoring
 {
     //Register the UUID beacon region to be monitoring
-    //NOTE: The UUID defined here must match the UUID that is being broadcast by your iBeacon broadcaster
-    NSUUID * uuid = [[NSUUID alloc] initWithUUIDString:@"BEE44022-97E5-4F0C-A100-0C43C114CCF5"];
+    //NOTE: The UUID defined here must match the UUID that
+    //is being broadcast by your iBeacon broadcaster
+    NSString * uuidString = @"BEE44022-97E5-4F0C-A100-0C43C114CCF5";
+    NSUUID * uuid = [[NSUUID alloc] initWithUUIDString:uuidString];
     
-    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"TestBeacon"];
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid
+                                                           identifier:@"TestBeacon"];
     self.beaconRegion.notifyEntryStateOnDisplay = YES;
     
-    //Tell iOS to monitor for the beacon specified and alert us when one comes in range or goes out
+    //Tell iOS to monitor for the beacon specified and alert us
+    //when one comes in range or goes out
     [self.locationManager startMonitoringForRegion:self.beaconRegion];
 }
 
@@ -65,7 +69,8 @@
     NSLog(@"didEnterRegion: %@", region.identifier);
     
     //If we've entered a beacon region, start ranging the beacons
-    if([region isKindOfClass:[CLBeaconRegion class]] && [region.identifier isEqualToString:self.beaconRegion.identifier]) {
+    if([region isKindOfClass:[CLBeaconRegion class]] &&
+       [region.identifier isEqualToString:self.beaconRegion.identifier]) {
         CLBeaconRegion * beaconRegion = (CLBeaconRegion*)region;
         [self.locationManager startRangingBeaconsInRegion:beaconRegion];
     }
@@ -77,7 +82,8 @@
     NSLog(@"didExitRegion: %@", region.identifier);
     
     //If we've exited a beacon region, stop ranging the beacons
-    if([region isKindOfClass:[CLBeaconRegion class]] && [region.identifier isEqualToString:self.beaconRegion.identifier]) {
+    if([region isKindOfClass:[CLBeaconRegion class]] &&
+       [region.identifier isEqualToString:self.beaconRegion.identifier]) {
         CLBeaconRegion * beaconRegion = (CLBeaconRegion*)region;
         [self.locationManager stopRangingBeaconsInRegion:beaconRegion];
     }
@@ -89,7 +95,8 @@
     NSLog(@"didDetermineState: %d for region: %@", state, region.identifier);
     
     //If we're in a beacon region, start ranging the beacons
-    if([region isKindOfClass:[CLBeaconRegion class]] && [region.identifier isEqualToString:self.beaconRegion.identifier]) {
+    if([region isKindOfClass:[CLBeaconRegion class]] &&
+       [region.identifier isEqualToString:self.beaconRegion.identifier]) {
         CLBeaconRegion * beaconRegion = (CLBeaconRegion*)region;
         if(state == CLRegionStateInside)
             [self.locationManager startRangingBeaconsInRegion:beaconRegion];
@@ -102,7 +109,8 @@
         didRangeBeacons:(NSArray *)beacons inRegion:(CLBeaconRegion *)region
 {
     for(CLBeacon * beacon in beacons) {
-        NSLog(@"didRangeBeacon: major:%d minor:%d in region: %@", [beacon.major intValue], [beacon.minor intValue], region.identifier);
+        NSLog(@"didRangeBeacon: major:%d minor:%d in region: %@",
+              [beacon.major intValue], [beacon.minor intValue], region.identifier);
         NSLog(@"didRangeBeacon proximity: %d", beacon.proximity);
         NSLog(@"didRangeBeacon accuracy: %f", beacon.accuracy);
     }
