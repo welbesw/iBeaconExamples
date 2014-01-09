@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFF2ACF4187F446000FFEA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2ACF3187F446000FFEA06 /* Foundation.framework */; };
+		BFF2ACF6187F446000FFEA06 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2ACF5187F446000FFEA06 /* CoreGraphics.framework */; };
+		BFF2ACF8187F446000FFEA06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2ACF7187F446000FFEA06 /* UIKit.framework */; };
+		BFF2ACFE187F446000FFEA06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF2ACFC187F446000FFEA06 /* InfoPlist.strings */; };
+		BFF2AD00187F446000FFEA06 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2ACFF187F446000FFEA06 /* main.m */; };
+		BFF2AD04187F446000FFEA06 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD03187F446000FFEA06 /* AppDelegate.m */; };
+		BFF2AD07187F446000FFEA06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF2AD05187F446000FFEA06 /* Main.storyboard */; };
+		BFF2AD0A187F446000FFEA06 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD09187F446000FFEA06 /* ViewController.m */; };
+		BFF2AD0C187F446000FFEA06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFF2AD0B187F446000FFEA06 /* Images.xcassets */; };
+		BFF2AD13187F446100FFEA06 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD12187F446100FFEA06 /* XCTest.framework */; };
+		BFF2AD14187F446100FFEA06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2ACF3187F446000FFEA06 /* Foundation.framework */; };
+		BFF2AD15187F446100FFEA06 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2ACF7187F446000FFEA06 /* UIKit.framework */; };
+		BFF2AD1D187F446100FFEA06 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF2AD1B187F446100FFEA06 /* InfoPlist.strings */; };
+		BFF2AD1F187F446100FFEA06 /* BeaconBroadcasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD1E187F446100FFEA06 /* BeaconBroadcasterTests.m */; };
+		BFF2AD2A187F44B200FFEA06 /* BeaconBroadcastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD29187F44B200FFEA06 /* BeaconBroadcastManager.m */; };
+		BFF2AD2D187F45DC00FFEA06 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD2C187F45DC00FFEA06 /* Configuration.m */; };
+		BFF2AD2F187F45E700FFEA06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BFF2AD16187F446100FFEA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFF2ACE8187F446000FFEA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BFF2ACEF187F446000FFEA06;
+			remoteInfo = BeaconBroadcaster;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BFF2ACF0187F446000FFEA06 /* BeaconBroadcaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeaconBroadcaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF2ACF3187F446000FFEA06 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFF2ACF5187F446000FFEA06 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFF2ACF7187F446000FFEA06 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFF2ACFB187F446000FFEA06 /* BeaconBroadcaster-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconBroadcaster-Info.plist"; sourceTree = "<group>"; };
+		BFF2ACFD187F446000FFEA06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFF2ACFF187F446000FFEA06 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFF2AD01187F446000FFEA06 /* BeaconBroadcaster-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeaconBroadcaster-Prefix.pch"; sourceTree = "<group>"; };
+		BFF2AD02187F446000FFEA06 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BFF2AD03187F446000FFEA06 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BFF2AD06187F446000FFEA06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BFF2AD08187F446000FFEA06 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BFF2AD09187F446000FFEA06 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BFF2AD0B187F446000FFEA06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BFF2AD11187F446100FFEA06 /* BeaconBroadcasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeaconBroadcasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF2AD12187F446100FFEA06 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BFF2AD1A187F446100FFEA06 /* BeaconBroadcasterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeaconBroadcasterTests-Info.plist"; sourceTree = "<group>"; };
+		BFF2AD1C187F446100FFEA06 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFF2AD1E187F446100FFEA06 /* BeaconBroadcasterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeaconBroadcasterTests.m; sourceTree = "<group>"; };
+		BFF2AD28187F44B200FFEA06 /* BeaconBroadcastManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconBroadcastManager.h; sourceTree = "<group>"; };
+		BFF2AD29187F44B200FFEA06 /* BeaconBroadcastManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconBroadcastManager.m; sourceTree = "<group>"; };
+		BFF2AD2B187F45DC00FFEA06 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
+		BFF2AD2C187F45DC00FFEA06 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
+		BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF2ACED187F446000FFEA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD2F187F45E700FFEA06 /* CoreLocation.framework in Frameworks */,
+				BFF2ACF6187F446000FFEA06 /* CoreGraphics.framework in Frameworks */,
+				BFF2ACF8187F446000FFEA06 /* UIKit.framework in Frameworks */,
+				BFF2ACF4187F446000FFEA06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF2AD0E187F446100FFEA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD13187F446100FFEA06 /* XCTest.framework in Frameworks */,
+				BFF2AD15187F446100FFEA06 /* UIKit.framework in Frameworks */,
+				BFF2AD14187F446100FFEA06 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFF2ACE7187F446000FFEA06 = {
+			isa = PBXGroup;
+			children = (
+				BFF2ACF9187F446000FFEA06 /* BeaconBroadcaster */,
+				BFF2AD18187F446100FFEA06 /* BeaconBroadcasterTests */,
+				BFF2ACF2187F446000FFEA06 /* Frameworks */,
+				BFF2ACF1187F446000FFEA06 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF2ACF1187F446000FFEA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2ACF0187F446000FFEA06 /* BeaconBroadcaster.app */,
+				BFF2AD11187F446100FFEA06 /* BeaconBroadcasterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF2ACF2187F446000FFEA06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */,
+				BFF2ACF3187F446000FFEA06 /* Foundation.framework */,
+				BFF2ACF5187F446000FFEA06 /* CoreGraphics.framework */,
+				BFF2ACF7187F446000FFEA06 /* UIKit.framework */,
+				BFF2AD12187F446100FFEA06 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF2ACF9187F446000FFEA06 /* BeaconBroadcaster */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2AD2B187F45DC00FFEA06 /* Configuration.h */,
+				BFF2AD2C187F45DC00FFEA06 /* Configuration.m */,
+				BFF2AD28187F44B200FFEA06 /* BeaconBroadcastManager.h */,
+				BFF2AD29187F44B200FFEA06 /* BeaconBroadcastManager.m */,
+				BFF2AD02187F446000FFEA06 /* AppDelegate.h */,
+				BFF2AD03187F446000FFEA06 /* AppDelegate.m */,
+				BFF2AD05187F446000FFEA06 /* Main.storyboard */,
+				BFF2AD08187F446000FFEA06 /* ViewController.h */,
+				BFF2AD09187F446000FFEA06 /* ViewController.m */,
+				BFF2AD0B187F446000FFEA06 /* Images.xcassets */,
+				BFF2ACFA187F446000FFEA06 /* Supporting Files */,
+			);
+			path = BeaconBroadcaster;
+			sourceTree = "<group>";
+		};
+		BFF2ACFA187F446000FFEA06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2ACFB187F446000FFEA06 /* BeaconBroadcaster-Info.plist */,
+				BFF2ACFC187F446000FFEA06 /* InfoPlist.strings */,
+				BFF2ACFF187F446000FFEA06 /* main.m */,
+				BFF2AD01187F446000FFEA06 /* BeaconBroadcaster-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFF2AD18187F446100FFEA06 /* BeaconBroadcasterTests */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2AD1E187F446100FFEA06 /* BeaconBroadcasterTests.m */,
+				BFF2AD19187F446100FFEA06 /* Supporting Files */,
+			);
+			path = BeaconBroadcasterTests;
+			sourceTree = "<group>";
+		};
+		BFF2AD19187F446100FFEA06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2AD1A187F446100FFEA06 /* BeaconBroadcasterTests-Info.plist */,
+				BFF2AD1B187F446100FFEA06 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF2ACEF187F446000FFEA06 /* BeaconBroadcaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF2AD22187F446100FFEA06 /* Build configuration list for PBXNativeTarget "BeaconBroadcaster" */;
+			buildPhases = (
+				BFF2ACEC187F446000FFEA06 /* Sources */,
+				BFF2ACED187F446000FFEA06 /* Frameworks */,
+				BFF2ACEE187F446000FFEA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeaconBroadcaster;
+			productName = BeaconBroadcaster;
+			productReference = BFF2ACF0187F446000FFEA06 /* BeaconBroadcaster.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BFF2AD10187F446100FFEA06 /* BeaconBroadcasterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF2AD25187F446100FFEA06 /* Build configuration list for PBXNativeTarget "BeaconBroadcasterTests" */;
+			buildPhases = (
+				BFF2AD0D187F446100FFEA06 /* Sources */,
+				BFF2AD0E187F446100FFEA06 /* Frameworks */,
+				BFF2AD0F187F446100FFEA06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BFF2AD17187F446100FFEA06 /* PBXTargetDependency */,
+			);
+			name = BeaconBroadcasterTests;
+			productName = BeaconBroadcasterTests;
+			productReference = BFF2AD11187F446100FFEA06 /* BeaconBroadcasterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF2ACE8187F446000FFEA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "My UIVIews";
+				TargetAttributes = {
+					BFF2AD10187F446100FFEA06 = {
+						TestTargetID = BFF2ACEF187F446000FFEA06;
+					};
+				};
+			};
+			buildConfigurationList = BFF2ACEB187F446000FFEA06 /* Build configuration list for PBXProject "BeaconBroadcaster" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BFF2ACE7187F446000FFEA06;
+			productRefGroup = BFF2ACF1187F446000FFEA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF2ACEF187F446000FFEA06 /* BeaconBroadcaster */,
+				BFF2AD10187F446100FFEA06 /* BeaconBroadcasterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFF2ACEE187F446000FFEA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD0C187F446000FFEA06 /* Images.xcassets in Resources */,
+				BFF2ACFE187F446000FFEA06 /* InfoPlist.strings in Resources */,
+				BFF2AD07187F446000FFEA06 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF2AD0F187F446100FFEA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD1D187F446100FFEA06 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF2ACEC187F446000FFEA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD2D187F45DC00FFEA06 /* Configuration.m in Sources */,
+				BFF2AD0A187F446000FFEA06 /* ViewController.m in Sources */,
+				BFF2AD2A187F44B200FFEA06 /* BeaconBroadcastManager.m in Sources */,
+				BFF2AD04187F446000FFEA06 /* AppDelegate.m in Sources */,
+				BFF2AD00187F446000FFEA06 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFF2AD0D187F446100FFEA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF2AD1F187F446100FFEA06 /* BeaconBroadcasterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BFF2AD17187F446100FFEA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BFF2ACEF187F446000FFEA06 /* BeaconBroadcaster */;
+			targetProxy = BFF2AD16187F446100FFEA06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BFF2ACFC187F446000FFEA06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF2ACFD187F446000FFEA06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFF2AD05187F446000FFEA06 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF2AD06187F446000FFEA06 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BFF2AD1B187F446100FFEA06 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF2AD1C187F446100FFEA06 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFF2AD20187F446100FFEA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFF2AD21187F446100FFEA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFF2AD23187F446100FFEA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeaconBroadcaster/BeaconBroadcaster-Prefix.pch";
+				INFOPLIST_FILE = "BeaconBroadcaster/BeaconBroadcaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFF2AD24187F446100FFEA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeaconBroadcaster/BeaconBroadcaster-Prefix.pch";
+				INFOPLIST_FILE = "BeaconBroadcaster/BeaconBroadcaster-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BFF2AD26187F446100FFEA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeaconBroadcaster.app/BeaconBroadcaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeaconBroadcaster/BeaconBroadcaster-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BeaconBroadcasterTests/BeaconBroadcasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BFF2AD27187F446100FFEA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BeaconBroadcaster.app/BeaconBroadcaster";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeaconBroadcaster/BeaconBroadcaster-Prefix.pch";
+				INFOPLIST_FILE = "BeaconBroadcasterTests/BeaconBroadcasterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF2ACEB187F446000FFEA06 /* Build configuration list for PBXProject "BeaconBroadcaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF2AD20187F446100FFEA06 /* Debug */,
+				BFF2AD21187F446100FFEA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF2AD22187F446100FFEA06 /* Build configuration list for PBXNativeTarget "BeaconBroadcaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF2AD23187F446100FFEA06 /* Debug */,
+				BFF2AD24187F446100FFEA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BFF2AD25187F446100FFEA06 /* Build configuration list for PBXNativeTarget "BeaconBroadcasterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF2AD26187F446100FFEA06 /* Debug */,
+				BFF2AD27187F446100FFEA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF2ACE8187F446000FFEA06 /* Project object */;
+}
