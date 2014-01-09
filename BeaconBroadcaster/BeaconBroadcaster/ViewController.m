@@ -72,6 +72,10 @@
             configuration.shouldBroadcast = YES;
             
             [beaconBroadcastManager startAdvertisingWithMajor:major minor:minor];
+        } else {
+            UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Beacon Values Required" message:@"Beacon major and minor values are required." delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [alert show];
+            [self.broadcastBeaconSwitch setOn:NO];
         }
     } else {
         [beaconBroadcastManager stopAdvertising];
