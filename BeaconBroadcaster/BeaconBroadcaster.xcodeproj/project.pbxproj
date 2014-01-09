@@ -23,7 +23,7 @@
 		BFF2AD1F187F446100FFEA06 /* BeaconBroadcasterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD1E187F446100FFEA06 /* BeaconBroadcasterTests.m */; };
 		BFF2AD2A187F44B200FFEA06 /* BeaconBroadcastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD29187F44B200FFEA06 /* BeaconBroadcastManager.m */; };
 		BFF2AD2D187F45DC00FFEA06 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD2C187F45DC00FFEA06 /* Configuration.m */; };
-		BFF2AD2F187F45E700FFEA06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */; };
+		BFF2AD31187F566D00FFEA06 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD30187F566D00FFEA06 /* CoreBluetooth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +61,7 @@
 		BFF2AD2B187F45DC00FFEA06 /* Configuration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Configuration.h; sourceTree = "<group>"; };
 		BFF2AD2C187F45DC00FFEA06 /* Configuration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Configuration.m; sourceTree = "<group>"; };
 		BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BFF2AD30187F566D00FFEA06 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF2AD2F187F45E700FFEA06 /* CoreLocation.framework in Frameworks */,
+				BFF2AD31187F566D00FFEA06 /* CoreBluetooth.framework in Frameworks */,
 				BFF2ACF6187F446000FFEA06 /* CoreGraphics.framework in Frameworks */,
 				BFF2ACF8187F446000FFEA06 /* UIKit.framework in Frameworks */,
 				BFF2ACF4187F446000FFEA06 /* Foundation.framework in Frameworks */,
@@ -110,6 +111,7 @@
 		BFF2ACF2187F446000FFEA06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFF2AD30187F566D00FFEA06 /* CoreBluetooth.framework */,
 				BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */,
 				BFF2ACF3187F446000FFEA06 /* Foundation.framework */,
 				BFF2ACF5187F446000FFEA06 /* CoreGraphics.framework */,
