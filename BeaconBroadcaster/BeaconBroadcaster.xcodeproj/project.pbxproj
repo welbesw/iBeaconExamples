@@ -24,6 +24,7 @@
 		BFF2AD2A187F44B200FFEA06 /* BeaconBroadcastManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD29187F44B200FFEA06 /* BeaconBroadcastManager.m */; };
 		BFF2AD2D187F45DC00FFEA06 /* Configuration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF2AD2C187F45DC00FFEA06 /* Configuration.m */; };
 		BFF2AD31187F566D00FFEA06 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD30187F566D00FFEA06 /* CoreBluetooth.framework */; };
+		BFF2AD32187F572200FFEA06 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF2AD2E187F45E700FFEA06 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF2AD32187F572200FFEA06 /* CoreLocation.framework in Frameworks */,
 				BFF2AD31187F566D00FFEA06 /* CoreBluetooth.framework in Frameworks */,
 				BFF2ACF6187F446000FFEA06 /* CoreGraphics.framework in Frameworks */,
 				BFF2ACF8187F446000FFEA06 /* UIKit.framework in Frameworks */,
