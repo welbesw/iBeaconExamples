@@ -43,10 +43,10 @@
 {
     self = [super init];
     if(self != nil) {
-        //dispatch_queue_t peripheralQueue = dispatch_queue_create("com.technomagionation.peripheralQueue", nil);
         self.peripheralManager = [[CBPeripheralManager alloc] initWithDelegate:self queue:nil];
         
-        self.proximityUUID = [[NSUUID alloc] initWithUUIDString:@"BEE44022-97E5-4F0C-A100-0C43C114CCF5"];
+        NSString * uidString = @"BEE44022-97E5-4F0C-A100-0C43C114CCF5";
+        self.proximityUUID = [[NSUUID alloc] initWithUUIDString:uidString];
         self.beaconRegionIdentifier = @"TestBeacon";
     }
     return self;
@@ -58,8 +58,11 @@
         [self.peripheralManager stopAdvertising];
     }
     
-    //Update the beacon region
-    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:self.proximityUUID major:major minor:minor identifier:self.beaconRegionIdentifier];
+    //Set the beacon region
+    self.beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:self.proximityUUID
+                                                                major:major
+                                                                minor:minor
+                                                           identifier:self.beaconRegionIdentifier];
     
     NSDictionary * dict = [self.beaconRegion peripheralDataWithMeasuredPower:nil];
     [self.peripheralManager startAdvertising:dict];
