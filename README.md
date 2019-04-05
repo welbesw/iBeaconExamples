@@ -1,5 +1,4 @@
 iBeaconExamples
-
 ===============
 
 These two projects are simple illustrations of how to incorporate iBeacon into an app.  You can find a more in depth discussion of the projects on the [iBeacon Primer](http://www.myuiviews.com/2014/01/09/ibeacon-primer.html) on [My UIViews](http://www.myuiviews.com).
